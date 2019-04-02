@@ -28,6 +28,7 @@ export class OrderService {
 
   public borrar_hoja(){
     this.localStorage.setObject("orden_tamal", []);
+    this.lista.splice(0,100);
   }
 
   public borrar_producto_hoja(id: number){

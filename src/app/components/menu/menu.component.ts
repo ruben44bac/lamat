@@ -19,4 +19,8 @@ export class MenuComponent implements OnInit {
   public cerrar(){
     this._ms.set_menu(false);
   }
+  public vaciar() {
+    this._os.borrar_hoja();
+    this._ms.set_menu(false);
+  }
 }
