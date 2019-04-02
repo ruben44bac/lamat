@@ -26,6 +26,6 @@
   </div>
   <div class="boton-pedido">
     <label>Total: {{ total.toFixed(2) }}</label>
-    <button mat-raised-button>Realizar pedido</button>
+    <button [disabled]="total <= 0" mat-raised-button>Realizar pedido</button>
   </div>
 </div>
