@@ -1,0 +1,21 @@
+<div class="dialog-contenido">
+  <p>¿Cuántos <label>{{ data.nombre }}</label> quieres agregar a tu pedido?</p>
+  <div class="clearfix"></div>
+
+    <mat-form-field appearance="outline" class="cantidad-input">
+      <mat-label>Cantidad</mat-label>
+      <input [(ngModel)]="cantidad" matInput placeholder="Cantidad" type="number">
+    </mat-form-field>
+
+  <div class="clearfix"></div>
+  <div class="row">
+    <div class="col-md-6">
+      <button class="col-md-12" (click)="dialogRef.close()" mat-stroked-button>Cancelar</button>
+    </div>
+    <div class="col-md-6">
+      <button class="col-md-12" (click)="agregar()" mat-flat-button color="primary">Agregar</button>
+    </div>
+  </div>
+  
+  
+</div>

@@ -1,0 +1,12 @@
+.dialog-contenido{
+    padding: 5%;
+}
+.dialog-contenido p {
+    font-size: 20px;
+}
+.dialog-contenido label {
+    color: #64B5F6;
+}
+.cantidad-input{
+    width: 100%;
+}

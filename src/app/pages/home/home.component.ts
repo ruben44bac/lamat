@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { OrderService } from '../../services/order.service';
+import { AddOrderDialogComponent } from './add-order-dialog/add-order-dialog.component';
+import { MatDialog } from '@angular/material';
+import { MenuService } from '../../services/menu.service';
 import { item } from '../../models/item';
 
 @Component({
@@ -124,11 +126,25 @@ export class HomeComponent implements OnInit {
       id: 19
     }
   ]
-  constructor(private _os: OrderService) { }
+  constructor(public dialog: MatDialog, private _ms: MenuService) { }
 
   ngOnInit() {
   }
 
+  public agregar(item: item) {
+    this.dialog.open(AddOrderDialogComponent, {
+      minWidth: '50%',
+      maxWidth: '90%',
+      data: item
+    }).afterClosed().subscribe(
+      res => {
+        if(res != undefined){
+          this._ms.set_menu(true);
+        }
+      }
+    );
+
+  }
 
 
 }

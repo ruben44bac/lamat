@@ -1,4 +1,21 @@
 <div class="menu">
   <button mat-button (click)="cerrar()">Cerrar</button>
+  <div class="lista-hoja">
+    <div *ngFor="let elto of lista">
+      <div class="col3">
+        <mat-form-field appearance="legacy" style="width: 60%;">
+          <mat-label>Cantidad</mat-label>
+          <input [(ngModel)]="elto.cantidad" matInput placeholder="Cantidad" type="number">
+        </mat-form-field>
+      </div>
+      <div class="col2">{{ elto.nombre }}</div>
+      <div class="col1">
+        <img src="https://cdn.shopify.com/s/files/1/0346/5933/products/tamal-de-dulce_large.jpg">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <div class="boton-pedido">
+    <button mat-raised-button>Realizar pedido</button>
+  </div>
 </div>
-
