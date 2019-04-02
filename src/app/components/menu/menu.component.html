@@ -1,12 +1,18 @@
 <div class="menu">
-  <button mat-button (click)="cerrar()">Cerrar</button>
-  <button mat-button (click)="vaciar()"><mat-icon>delete_outline</mat-icon></button>
+  <div class="boton-hoja">
+    <button mat-button (click)="cerrar()">Cerrar</button>
+    <button mat-button (click)="vaciar()">
+      <mat-icon>delete_outline</mat-icon>
+    </button>
+  </div>
+  <div class="clearfix"></div>
   <div class="lista-hoja">
     <div *ngFor="let elto of lista">
       <div class="col3">
         <mat-form-field appearance="legacy" style="width: 60%;">
           <mat-label>Cantidad</mat-label>
-          <input [(ngModel)]="elto.cantidad" (keyup)="ajusta_cantidad(elto)" autocomplete="off" matInput placeholder="Cantidad" type="number">
+          <input [(ngModel)]="elto.cantidad" (keyup)="ajusta_cantidad(elto)" autocomplete="off" matInput placeholder="Cantidad"
+            type="number">
         </mat-form-field>
       </div>
       <div class="col2">{{ elto.nombre }}<br>
@@ -19,6 +25,7 @@
     </div>
   </div>
   <div class="boton-pedido">
+    <label>Total: {{ total.toFixed(2) }}</label>
     <button mat-raised-button>Realizar pedido</button>
   </div>
 </div>

@@ -26,4 +26,11 @@ export class MenuComponent implements OnInit {
     this._os.borrar_hoja();
     this._ms.set_menu(false);
   }
+
+  public get total(): number{
+    var sum = 0;
+    this.lista.forEach(f => 
+      { sum += f.cantidad * f.precio; })
+    return sum;
+  }
 }
