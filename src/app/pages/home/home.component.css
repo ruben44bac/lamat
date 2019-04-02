@@ -12,6 +12,7 @@
     animation-duration: 0.7s;
     transition: 2.0s;
     -moz-transition: 2.0s;
+    height: auto;
 }
 
 .tarjeta:hover .tarjeta-contenido{
@@ -27,7 +28,7 @@
     border-top-right-radius: 10px;}
 
 .tarjeta-contenido{
-    padding: 10%;
+    padding: 10% 10% 15% 10%;
     background: #fff;
     margin-bottom: 10%;
     border-bottom-left-radius: 10px;

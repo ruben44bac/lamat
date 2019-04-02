@@ -19,6 +19,9 @@ export class MenuComponent implements OnInit {
   public cerrar(){
     this._ms.set_menu(false);
   }
+  public ajusta_cantidad(elto: item){
+    this._os.agrega_producto(elto);
+  }
   public vaciar() {
     this._os.borrar_hoja();
     this._ms.set_menu(false);

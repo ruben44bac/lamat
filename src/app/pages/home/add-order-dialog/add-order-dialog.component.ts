@@ -10,7 +10,7 @@ import { OrderService } from '../../../services/order.service';
 })
 export class AddOrderDialogComponent implements OnInit {
 
-  public cantidad = 0;
+  public cantidad = 1;
   constructor(public dialogRef: MatDialogRef<AddOrderDialogComponent>,
     private _os: OrderService,
     @Inject(MAT_DIALOG_DATA) public data: item) { }
