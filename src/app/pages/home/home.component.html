@@ -1,0 +1,19 @@
+<div class="historia-1">
+    El tamal (del náhuatl tamalli, que significa envuelto) es un nombre 
+    genérico dado a varios platos americanos de origen indígena preparado 
+    generalmente con masa de maíz cocida envuelta en hojas de la mazorca <a routerLink="/history">ver más...</a>
+</div>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let pro of productos" class="col-md-3">
+      <div class="tarjeta">
+        <img class="tarjeta-img" src="https://cdn.shopify.com/s/files/1/0346/5933/products/tamal-de-dulce_large.jpg">
+
+        <div class="tarjeta-contenido">
+          {{ pro.nombre }}
+          <label class="tarjeta-precio">{{ pro.precio.toFixed(2) }}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

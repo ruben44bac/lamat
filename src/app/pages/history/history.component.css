@@ -1,0 +1,48 @@
+.tarjeta-nosotros{
+    border: 2px solid #F0F0F0;
+    border-radius:10px;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
+.tarjeta-nosotros p{
+    padding: 2%;
+    font-family: 'Roboto';
+}
+.titulo{
+    font-size: 30px;
+    padding-bottom: 1%;
+    -webkit-animation-name: titulo-frame;
+    -webkit-animation-duration: 1.0s;
+    animation-name: titulo-frame;
+    animation-duration: 1.0s;
+}
+
+@-webkit-keyframes titulo-frame {
+    0%   {font-size: 0px;}
+    100% {font-size: 30px;}
+}
+  
+  /* Standard syntax */
+@keyframes titulo-frame {
+    0%   {font-size: 0px;}
+    100% {font-size: 30px;}
+}
+
+.titulo-nosotros{
+    color: #64B5F6;
+    font-size: 20px;
+}
+.img-historia{
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.img-historia img{
+    width: 60%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 26px -2px rgba(138,138,138,1);
+    -moz-box-shadow: 0px 0px 26px -2px rgba(138,138,138,1);
+    box-shadow: 0px 0px 26px -2px rgba(138,138,138,1);
+}

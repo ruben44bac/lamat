@@ -1,0 +1,30 @@
+<div class="header row animacion-1" *ngIf="header.aux">
+  <div class="col-md-2">
+    <img src="/assets/tamales.png" class="img-logo">
+  </div>
+  <div class="col-md-2"><br></div>
+  <div class="col-md-8 ">
+    <label class="col-md-2"></label>
+    <label class="col-md-2 menu-seleccion" routerLink="/history">Historia</label>
+    <label class="col-md-2 menu-seleccion" routerLink="/about">Nosotros</label>
+    <label class="col-md-2 menu-seleccion" routerLink="/contact">Contacto</label>
+    <label class="col-md-3 menu-seleccion" >
+      <button (click)="menuCambio()" class="boton-menu" mat-raised-button routerLink="/home"><mat-icon>shopping_cart</mat-icon> Hoja de pedido</button>
+    </label>
+    <div class="clearfix"></div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<div class="header-1 animacion-2" *ngIf="!header.aux">
+  <img src="/assets/tamales.png" class="img-logo-1">
+  <button (click)="menuCambio()" class="boton-menu ajuste-boton" mat-raised-button routerLink="/home"><mat-icon>shopping_cart</mat-icon> Hoja de pedido</button>
+  <input  type="checkbox" id="menu-toggle" />
+  <label id="trigger" for="menu-toggle"></label>
+  <label id="burger" for="menu-toggle"></label>
+  <ul id="menu">
+    <li><a href="/home">Hoja de pedido</a></li>
+    <li><a href="/history">Historia</a></li>
+    <li><a href="/about">Nosotros</a></li>
+    <li><a href="/contact">Contacto</a></li>
+  </ul>
+</div>

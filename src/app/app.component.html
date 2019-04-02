@@ -1,0 +1,20 @@
+<mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">
+    <mat-sidenav #sidenav mode="side" [opened] = "menu.abrir"  position="end" (keydown.escape)="close('escape')" disableClose>
+        <app-menu></app-menu>
+    </mat-sidenav>
+
+    <mat-sidenav-content (scroll)="onScroll($event)">
+
+
+        <app-header></app-header>
+        <div class="clearfix"></div>
+        <div class="conteiner-all" >
+            <router-outlet></router-outlet>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        <app-footer></app-footer>
+
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
