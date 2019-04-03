@@ -9,15 +9,22 @@ import { item } from '../models/item';
 export class OrderService {
   private lista: Array<item>;
   constructor(private localStorage: CoolLocalStorage) { 
-    this.lista = this.localStorage.getObject<Array<item>>("orden_tamal");
+    if(this.localStorage.getObject<Array<item>>("orden_tamal") == undefined){
+      this.lista = new Array<item>();
+    } else {
+      this.lista = this.localStorage.getObject<Array<item>>("orden_tamal");
+    }
+    
   }
 
   public agrega_producto(item: item){
     
 
       let repetido = this.lista.map(function(obj){
-        return obj.id
+        return obj.id;
       }).indexOf(item.id);
+
+
       if(repetido != -1){
         this.lista[repetido].cantidad = item.cantidad;
       } else {

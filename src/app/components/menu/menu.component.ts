@@ -29,6 +29,9 @@ export class MenuComponent implements OnInit {
 
   public get total(): number{
     var sum = 0;
+    if(this.lista == undefined) {
+      return 0;
+    }
     this.lista.forEach(f => 
       { sum += f.cantidad * f.precio; })
     return sum;
