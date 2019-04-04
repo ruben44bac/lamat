@@ -8,8 +8,10 @@
     <label class="col-md-2 menu-seleccion" routerLink="/history">Historia</label>
     <label class="col-md-2 menu-seleccion" routerLink="/about">Nosotros</label>
     <label class="col-md-2 menu-seleccion" routerLink="/contact">Contacto</label>
-    <label class="col-md-3 menu-seleccion" >
-      <button (click)="menuCambio()" class="boton-menu" mat-raised-button routerLink="/home"><mat-icon>shopping_cart</mat-icon> Hoja de pedido</button>
+    <label class="col-md-3 menu-seleccion">
+      <button (click)="menuCambio()" class="boton-menu" mat-raised-button routerLink="/home">
+        <mat-icon>shopping_cart</mat-icon> Hoja de pedido
+      </button>
     </label>
     <div class="clearfix"></div>
   </div>
@@ -17,8 +19,10 @@
 </div>
 <div class="header-1 animacion-2" *ngIf="!header.aux">
   <img src="/assets/tamales.png" class="img-logo-1">
-  <button (click)="menuCambio()" class="boton-menu ajuste-boton" mat-raised-button routerLink="/home"><mat-icon>shopping_cart</mat-icon> Hoja de pedido</button>
-  <input  type="checkbox" id="menu-toggle" />
+  <button (click)="menuCambio()" class="boton-menu ajuste-boton" mat-raised-button routerLink="/home">
+    <mat-icon>shopping_cart</mat-icon> Hoja de pedido
+  </button>
+  <input type="checkbox" id="menu-toggle" />
   <label id="trigger" for="menu-toggle"></label>
   <label id="burger" for="menu-toggle"></label>
   <ul id="menu">
@@ -28,3 +32,16 @@
     <li><a href="/contact">Contacto</a></li>
   </ul>
 </div>
+<button class="translate-button" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+  <mat-icon>translate</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button (click)="translate('en')" mat-menu-item>
+    <mat-icon>bookmark</mat-icon>
+    <span>English</span>
+  </button>
+  <button  (click)="translate('es')"mat-menu-item>
+    <mat-icon>bookmark_border</mat-icon>
+    <span>Español</span>
+  </button>
+</mat-menu>

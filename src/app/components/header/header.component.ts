@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HeaderService } from '../../services/header.service';
 import { MenuService } from '../../services/menu.service';
+import { Translate_1Service } from '../../services/translate.service';
 import { Header } from '../../models/header';
 
 @Component({
@@ -11,6 +12,7 @@ import { Header } from '../../models/header';
 export class HeaderComponent implements OnInit {
   public header: Header;
   constructor(private _hs: HeaderService,
+    private _ts: Translate_1Service,
     private _ms: MenuService) {
    }
 
@@ -20,6 +22,8 @@ export class HeaderComponent implements OnInit {
   public menuCambio(){
     this._ms.set_menu(true);
   }
-
+  public translate(idioma: string){
+    this._ts.set_translate(idioma);
+  }
 
 }

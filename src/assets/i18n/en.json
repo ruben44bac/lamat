@@ -1,0 +1,14 @@
+{
+    "orden": {
+      "titulo": "Finish order",
+      "titulo-2": "Resume",
+      "total": "Total",
+      "formulario": {
+          "nombre": "Name",
+          "correo": "Email",
+          "telefono": "Phone",
+          "mensaje": "Message",
+          "boton": "Finish"
+      }
+    }
+  }

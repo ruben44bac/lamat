@@ -1,0 +1,14 @@
+{
+    "orden": {
+      "titulo": "Finaliza tu pedido",
+      "titulo-2": "Resumen",
+      "total": "Total",
+      "formulario": {
+          "nombre": "Nombre",
+          "correo": "Correo electrónico",
+          "telefono": "Teléfono",
+          "mensaje": "Mensaje",
+          "boton": "Finalizar"
+      }
+    }
+  }

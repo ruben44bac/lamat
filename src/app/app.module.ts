@@ -8,6 +8,7 @@ import { DeviceDetectorModule } from 'ngx-device-detector';
 import { RouterModule } from '@angular/router';
 
 import { HeaderService } from './services/header.service';
+import { Translate_1Service } from './services/translate.service';
 import { MenuService } from './services/menu.service';
 import { OrderService } from './services/order.service';
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +16,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MenuComponent } from './components/menu/menu.component';
+
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { MenuComponent } from './components/menu/menu.component';
   ],
   providers: [ HeaderService,
     MenuService,
-    OrderService
+    OrderService,
+    Translate_1Service
      ],
   bootstrap: [AppComponent]
 })

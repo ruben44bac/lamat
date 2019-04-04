@@ -88,7 +88,11 @@
     position: absolute;
   }
 
-
+  .translate-button{
+    right: 0;
+    margin-right: 2%;
+    position: absolute;
+  }
 
 
 @keyframes checked-anim {

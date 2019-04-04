@@ -1,5 +1,5 @@
 <div class="container">
-  <p class="titulo">Finaliza tu orden</p>
+  <p class="titulo">{{ 'orden.titulo' | translate }}</p>
   <div class="row">
 
     <div class="col-md-6">
@@ -7,38 +7,38 @@
       <form class="col-md-10 tarjeta">
         <div class="tarjeta-contenido-orden">
           <mat-form-field class="col-md-12" appearance="outline">
-            <mat-label>Nombre</mat-label>
+            <mat-label>{{ 'orden.formulario.nombre' | translate }}</mat-label>
             <input matInput placeholder="Nombre" autocomplete="off">
             <mat-icon matSuffix>account_circle</mat-icon>
           </mat-form-field>
 
           <mat-form-field class="col-md-12" appearance="outline">
-            <mat-label>Correo electrónico</mat-label>
+            <mat-label>{{ 'orden.formulario.correo' | translate }}</mat-label>
             <input matInput placeholder="Correo electrónico" autocomplete="off">
             <mat-icon matSuffix>mail</mat-icon>
           </mat-form-field>
 
           <mat-form-field class="col-md-12" appearance="outline">
-            <mat-label>Teléfono</mat-label>
+            <mat-label>{{ 'orden.formulario.telefono' | translate }}</mat-label>
             <input matInput placeholder="Teléfono" autocomplete="off">
             <mat-icon matSuffix>phone</mat-icon>
           </mat-form-field>
 
           <mat-form-field class="col-md-12" appearance="outline">
-            <mat-label>Mensaje</mat-label>
+            <mat-label>{{ 'orden.formulario.mensaje' | translate }}</mat-label>
             <input matInput placeholder="Mensaje" autocomplete="off">
             <mat-icon matSuffix>user</mat-icon>
           </mat-form-field>
 
-          <button mat-flat-button class="col-md-12" color="primary">Finalizar</button>
+          <button mat-flat-button class="col-md-12" color="primary">{{ 'orden.formulario.boton' | translate }}</button>
         </div>
       </form>
     </div>
     <div class="col-md-6">
 
-      <p class="titulo-resumen">Resumen</p>
+      <p class="titulo-resumen">{{ 'orden.titulo-2' | translate }}</p>
       <div class="total-orden">
-        <span>Total: </span> <span class="total"> {{ total.toFixed(2) }} </span>
+        <span>{{ 'orden.total' | translate }}: </span> <span class="total"> {{ total.toFixed(2) }} </span>
       </div>
       <div class="orden-productos">
         <div *ngFor="let elto of lista">
