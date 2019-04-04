@@ -1,0 +1,62 @@
+<div class="container">
+  <p class="titulo">Finaliza tu orden</p>
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="col-md-1"></div>
+      <form class="col-md-10 tarjeta">
+        <div class="tarjeta-contenido-orden">
+          <mat-form-field class="col-md-12" appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Nombre" autocomplete="off">
+            <mat-icon matSuffix>account_circle</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="col-md-12" appearance="outline">
+            <mat-label>Correo electrónico</mat-label>
+            <input matInput placeholder="Correo electrónico" autocomplete="off">
+            <mat-icon matSuffix>mail</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="col-md-12" appearance="outline">
+            <mat-label>Teléfono</mat-label>
+            <input matInput placeholder="Teléfono" autocomplete="off">
+            <mat-icon matSuffix>phone</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="col-md-12" appearance="outline">
+            <mat-label>Mensaje</mat-label>
+            <input matInput placeholder="Mensaje" autocomplete="off">
+            <mat-icon matSuffix>user</mat-icon>
+          </mat-form-field>
+
+          <button mat-flat-button class="col-md-12" color="primary">Finalizar</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+
+      <p class="titulo-resumen">Resumen</p>
+      <div class="total-orden">
+        <span>Total: </span> <span class="total"> {{ total.toFixed(2) }} </span>
+      </div>
+      <div class="orden-productos">
+        <div *ngFor="let elto of lista">
+
+          <div class="col1-o">
+            <img width="100%" src="https://cdn.shopify.com/s/files/1/0346/5933/products/tamal-de-dulce_large.jpg">
+          </div>
+
+          <div class="col2-o">{{ elto.nombre }}<br>
+            <label class="orden-texto">Cantidad: </label> <label class="orden-valor">{{ elto.cantidad }}</label>
+            <label class="orden-texto">Precio: </label> <label class="orden-valor">{{ (elto.precio *
+              elto.cantidad).toFixed(2) }}</label>
+          </div>
+          <div class="clearfix"></div>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

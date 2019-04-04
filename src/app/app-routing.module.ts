@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: "about",
     loadChildren: "./pages/about/about.module#AboutModule"
+  },
+  {
+    path: "order",
+    loadChildren: "./pages/order/order.module#OrderModule"
   }
 ];
 

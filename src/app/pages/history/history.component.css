@@ -9,25 +9,6 @@
     padding: 2%;
     font-family: 'Roboto';
 }
-.titulo{
-    font-size: 30px;
-    padding-bottom: 1%;
-    -webkit-animation-name: titulo-frame;
-    -webkit-animation-duration: 1.0s;
-    animation-name: titulo-frame;
-    animation-duration: 1.0s;
-}
-
-@-webkit-keyframes titulo-frame {
-    0%   {font-size: 0px;}
-    100% {font-size: 30px;}
-}
-  
-  /* Standard syntax */
-@keyframes titulo-frame {
-    0%   {font-size: 0px;}
-    100% {font-size: 30px;}
-}
 
 .titulo-nosotros{
     color: #64B5F6;

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MenuService } from '../../services/menu.service';
 import { OrderService } from '../../services/order.service';
 import { item } from '../../models/item';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -11,6 +12,7 @@ import { item } from '../../models/item';
 export class MenuComponent implements OnInit {
   public lista: Array<item>;
   constructor(private _ms: MenuService,
+    private router: Router,
     private _os: OrderService) { }
 
   ngOnInit() {
@@ -25,6 +27,15 @@ export class MenuComponent implements OnInit {
   public vaciar() {
     this._os.borrar_hoja();
     this._ms.set_menu(false);
+  }
+
+  public eliminar(elto: item) {
+    this._os.borrar_producto_hoja(elto.id);
+  }
+
+  public orden() {
+    this._ms.set_menu(false);
+    this.router.navigate(['order']);
   }
 
   public get total(): number{

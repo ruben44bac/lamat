@@ -1,18 +1,18 @@
 
 .header{
     width: 110%;
-    padding: 2%;
+    padding: 1%;
     background: #64B5F6;
 }
 
 .img-logo{
     width: 70%;
     position: absolute;
-    margin-top: -20%;
+    margin-top: -15%;
 }
 
 .header-1{
-    height: 20vh;
+    height: 12vh;
     background: url(/assets/fondo.jpg);
     background-repeat: no-repeat;
     background-size: auto;
@@ -27,7 +27,7 @@
 .img-logo-1{
     width: 13%;
     position: absolute;
-    margin-top: 2%;
+    margin-top: -2%;
     margin-left: 43.5%;
 }
 .menu-seleccion {

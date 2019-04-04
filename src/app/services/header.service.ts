@@ -13,7 +13,7 @@ export class HeaderService {
 
   public set_header(posicion: number) {
     this.header.posicion = posicion;
-    this.header.aux = posicion > 30;
+    this.header.aux = posicion > 20;
   }
   public get get_header(): Header {
     return this.header;

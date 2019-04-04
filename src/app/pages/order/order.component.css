@@ -1,0 +1,47 @@
+.orden-texto{
+    font-size: 12px;
+    color: gray;
+    margin-left: 5%;
+}
+    
+.orden-valor{
+    color: #64B5F6;
+}
+    
+.col1-o {
+    width: 20%;
+    float: left;
+    padding: 1%
+}
+
+.col2-o {
+    width: 80%;
+    float: left;
+    padding: 2%;
+}
+
+.tarjeta-contenido-orden {
+    padding: 10% 5% 10% 5%;
+}
+.orden-productos {
+    height: 50vh;
+    overflow-y: scroll;
+    padding: 5%;
+}
+
+.titulo-resumen {
+    margin-top: -8%;
+    font-size: 20px;
+}
+
+.total-orden {
+    background: #64B5F6;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 4%;
+}
+
+.total-orden .total {
+    font-family: 'Roboto';
+    font-size: 20px;
+}
