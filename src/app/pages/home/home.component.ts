@@ -3,6 +3,11 @@ import { AddOrderDialogComponent } from './add-order-dialog/add-order-dialog.com
 import { MatDialog } from '@angular/material';
 import { MenuService } from '../../services/menu.service';
 import { item } from '../../models/item';
+import { Translate_1Service } from '../../services/translate.service';
+import { TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
+
+
 
 @Component({
   selector: 'app-home',
@@ -125,8 +130,17 @@ export class HomeComponent implements OnInit {
       precio: 25.00,
       id: 19
     }
-  ]
-  constructor(public dialog: MatDialog, private _ms: MenuService) { }
+  ];
+  public subscription: Subscription;
+  constructor(public dialog: MatDialog, 
+    private _ms: MenuService,
+    private _ts: Translate_1Service,
+    public translate: TranslateService) {
+    this.translate.addLangs(['en', 'es']);
+    this.translate.setDefaultLang(this._ts.get_translate_init);
+    this.subscription = this._ts.get_translate.subscribe(resp => {
+      translate.use(resp);
+    });}
 
   ngOnInit() {
   }

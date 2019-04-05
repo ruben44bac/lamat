@@ -1,14 +1,38 @@
 {
-    "orden": {
-      "titulo": "Finaliza tu pedido",
-      "titulo-2": "Resumen",
-      "total": "Total",
-      "formulario": {
-          "nombre": "Nombre",
-          "correo": "Correo electrónico",
-          "telefono": "Teléfono",
-          "mensaje": "Mensaje",
-          "boton": "Finalizar"
-      }
+  "orden": {
+    "titulo": "Finaliza tu pedido",
+    "titulo-2": "Resumen",
+    "total": "Total",
+    "formulario": {
+      "nombre": "Nombre",
+      "correo": "Correo electrónico",
+      "telefono": "Teléfono",
+      "mensaje": "Mensaje",
+      "boton": "Finalizar"
     }
+  },
+  "home": {
+    "historia": "El tamal (del náhuatl tamalli, que significa envuelto) es un nombre genérico dado a varios platos americanos de origen indígena preparado generalmente con masa de maíz cocida envuelta en hojas de la mazorca",
+    "mas": "ver más"
+  },
+  "historia": {
+    "titulo": "Historia",
+    "p1": "El tamal (del náhuatl tamalli, que significa envuelto) es un nombre genérico dado a varios platillos americanos de origen indígena preparados generalmente con masa de maíz cocida normalmente al vapor, envuelto en hojas de la mazorca de la misma planta de maíz o de plátano, mashán o bijao, maguey, aguacate, canak e incluso papel aluminio o plástico.",
+    "p2": "Pueden llevar o no relleno, el cual puede contener carne, vegetales, chile, frutas, salsa, etc. Además pueden tener sabor dulce o salado.",
+    "p3": "Existe evidencia de que las culturas predominantes en México que llevaron el maíz a otras culturas y regiones, también llevaron consigo platos y formas de cocinar el maíz. Siendo el tamal un método sencillo de cocción del maíz, es posible pensar que podría haber sido inventado en alguna de las posibles regiones origen del maíz, es decir desde México, hasta Sudamérica y de ahí llevado a otras culturas y regiones. Los tamales son descritos en México por Fray Bernardino de Sahagún en Historia General de las cosas de Nueva España a principios del siglo XVI."
+  },
+  "contacto": {
+    "titulo": "Contacto",
+    "formulario": {
+      "nombre": "Nombre",
+      "correo": "Correo electrónico",
+      "telefono": "Teléfono",
+      "mensaje": "Mensaje",
+      "boton": "Finalizar"
+    }
+  },
+  "nosotros": {
+    "titulo": "Historia"
+
   }
+}

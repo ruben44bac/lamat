@@ -6,6 +6,8 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { AddOrderDialogComponent } from './add-order-dialog/add-order-dialog.component';
 import { MaterialModule } from '../../modules/material/material.module';
+import { ShareModule } from '../../modules/share/share.module';
+
 
 @NgModule({
   declarations: [HomeComponent, AddOrderDialogComponent],
@@ -13,7 +15,8 @@ import { MaterialModule } from '../../modules/material/material.module';
     CommonModule,
     HomeRoutingModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    ShareModule
   ],
   entryComponents: [ AddOrderDialogComponent ]
 })
