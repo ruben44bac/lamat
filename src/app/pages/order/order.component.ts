@@ -4,7 +4,6 @@ import { item } from '../../models/item';
 
 import { Translate_1Service } from '../../services/translate.service';
 import { TranslateService } from '@ngx-translate/core';
-import { Subscription } from 'rxjs';
 
 
 
@@ -15,16 +14,12 @@ import { Subscription } from 'rxjs';
 })
 export class OrderComponent implements OnInit {
   public lista: Array<item>;
-  public subscription: Subscription;
 
   constructor(private _os: OrderService,
     private _ts: Translate_1Service,
     public translate: TranslateService) {
     this.translate.addLangs(['en', 'es']);
     this.translate.setDefaultLang(this._ts.get_translate_init);
-    this.subscription = this._ts.get_translate.subscribe(resp => {
-      translate.use(resp);
-    });
   }
 
   ngOnInit() {
@@ -37,7 +32,8 @@ export class OrderComponent implements OnInit {
     return sum;
   }
 
-
+  ngOnDestroy() {
+  }
 
 
 }

@@ -1,10 +1,10 @@
 <div class="menu">
   <div class="boton-hoja">
     <div class="boton-hoja-1">
-      <button mat-button matTooltip="Cerrar" (click)="cerrar()">Cerrar</button>
+      <button mat-button matTooltip="{{ 'menu.botonCerrar' | translate }}" (click)="cerrar()">{{ 'menu.botonCerrar' | translate }}</button>
     </div>
     <div class="boton-hoja-2" align="right">
-      <button matTooltip="Borrar" mat-button (click)="vaciar()">
+      <button matTooltip="{{ 'menu.botonBorrar' | translate }}" mat-button (click)="vaciar()">
         <mat-icon>delete_outline</mat-icon>
       </button>
     </div>
@@ -24,7 +24,7 @@
 
       <div class="col3">
         <mat-form-field appearance="legacy" style="width: 100%;">
-          <mat-label>Cantidad</mat-label>
+          <mat-label>{{ 'menu.cantidad' | translate }}</mat-label>
           <input [(ngModel)]="elto.cantidad" (keyup)="ajusta_cantidad(elto)" autocomplete="off" matInput placeholder="Cantidad"
             type="number">
         </mat-form-field>
@@ -41,6 +41,6 @@
   </div>
   <div class="boton-pedido">
     <label>Total: {{ total.toFixed(2) }}</label>
-    <button (click)="orden()" [disabled]="total <= 0" mat-raised-button>Realizar pedido</button>
+    <button (click)="orden()" [disabled]="total <= 0" mat-raised-button>{{ 'menu.botonPedido' | translate }}</button>
   </div>
 </div>

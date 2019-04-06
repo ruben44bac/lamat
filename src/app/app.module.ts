@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
+import { ShareModule } from './modules/share/share.module';
 import { CoolStorageModule } from 'angular2-cool-storage';
 import { DeviceDetectorModule } from 'ngx-device-detector';
 import { RouterModule } from '@angular/router';
@@ -33,6 +34,7 @@ import { MenuComponent } from './components/menu/menu.component';
     CoolStorageModule,
     FormsModule,
     RouterModule,
+    ShareModule,
     DeviceDetectorModule.forRoot()
   ],
   providers: [ HeaderService,

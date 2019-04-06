@@ -32,7 +32,25 @@
     }
   },
   "nosotros": {
-    "titulo": "Historia"
+    "titulo": "Nosotros",
+    "titulo1": "Misión",
+    "titulo2": "Visión",
+    "titulo3": "Valores",
+    "descripcion1": "La misión de una empresa. depende de la actividad que la organización realice, así como del entorno en el que se encuentra y de los recursos de los que dispone. Si se trata de una empresa, la misión dependerá del tipo de negocio del que se trate, de las necesidades de la población en ese momento dado y la situación del mercado.",
+    "descripcion2": "La visión de una empresa. por otro lado, se refiere a una imagen que la organización plantea a largo plazo sobre cómo espera que sea su futuro, una expectativa ideal de lo que espera que ocurra. La visión debe ser realista pero puede ser ambiciosa, su función es guiar y motivar al grupo para continuar con el trabajo.",
+    "descripcion3": "Sin unos valores bien definidos y sobre todo bien afianzados en su personal, una empresa tendrá una imagen pública errática o irregular, lo cual se traduce en que su clientela e inversores no sabrán a ciencia cierta qué tipo de conductas esperar de ella. Todo esto va en detrimento de la credibilidad de la empresa, y en tiempos de redes sociales y fidelización clientelar, pocas cosas son más importantes que convencer al público objetivo de que puede confiar en la organización."
 
+  },
+  "menu": {
+    "botonCerrar": "Cerrar",
+    "botonBorrar": "Borrar",
+    "cantidad": "Cantidad",
+    "botonPedido": "Finalizar orden"
+  },
+  "cabecera": {
+    "historia": "Historia",
+    "nosotros": "Nosotros",
+    "contacto": "Contacto",
+    "pedido": "Hoja de pedido"
   }
 }

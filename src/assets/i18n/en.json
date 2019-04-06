@@ -1,14 +1,55 @@
 {
-    "orden": {
-      "titulo": "Finish order",
-      "titulo-2": "Resume",
-      "total": "Total",
-      "formulario": {
-          "nombre": "Name",
-          "correo": "Email",
-          "telefono": "Phone",
-          "mensaje": "Message",
-          "boton": "Finish"
-      }
+  "orden": {
+    "titulo": "Finish order",
+    "titulo-2": "Resume",
+    "total": "Total",
+    "formulario": {
+      "nombre": "Name",
+      "correo": "Email",
+      "telefono": "Phone",
+      "mensaje": "Message",
+      "boton": "Finish"
     }
+  },
+  "home": {
+    "historia": "Tamal (from Nahuatl tamalli, which means wrapped) is a generic name given to several American dishes of indigenous origin usually prepared with mash of cooked corn wrapped in leaves of the cob",
+    "mas": "see more"
+  },
+  "historia": {
+    "titulo": "History",
+    "p1": "Tamal (from Nahuatl tamalli, meaning wrapped) is a generic name given to several American dishes of indigenous origin usually prepared with corn dough usually steamed, wrapped in corn husks from the same corn or banana plant, mashán or bijao, maguey, avocado, canak and even aluminum or plastic paper.",
+    "p2": "They can carry or not fill, which can contain meat, vegetables, chili, fruit, sauce, etc. They can also have a sweet or salty flavor.",
+    "p3": "There is evidence that the predominant cultures in Mexico that brought corn to other cultures and regions also brought with them dishes and ways of cooking corn. Being the tamale a simple method of cooking corn, it is possible to think that it could have been invented in some of the possible regions origin of corn, that is to say from Mexico, to South America and from there to other cultures and regions. Tamales are described in Mexico by Fray Bernardino de Sahagún in Historia General de las cosas de Nueva España at the beginning of the 16th century."
+  },
+  "contacto": {
+    "titulo": "Contact",
+    "formulario": {
+      "nombre": "Name",
+      "correo": "Email",
+      "telefono": "Phone",
+      "mensaje": "Message",
+      "boton": "Finish"
+    }
+  },
+  "nosotros": {
+    "titulo": "About",
+    "titulo1": "Missión",
+    "titulo2": "Visión",
+    "titulo3": "securities",
+    "descripcion1": "The mission of a company. It depends on the activity that the organization carries out, as well as the environment in which it is located and the resources available to it. If it is a company, the mission will depend on the type of business in question, the needs of the population at that time and the market situation.",
+    "descripcion2": "The vision of a company. On the other hand, it refers to an image that the organization poses in the long term about how it expects its future to be, an ideal expectation of what it expects to happen. The vision must be realistic but it can be ambitious, its function is to guide and motivate the group to continue with the work.",
+    "descripcion3": "Without well-defined values and above all well-entrenched in its staff, a company will have a public image erratic or irregular, which translates into its customers and investors will not know for sure what kind of behavior to expect from it. All this is detrimental to the credibility of the company, and in times of social networks and customer loyalty, few things are more important than convincing the target audience that they can trust the organization."
+  },
+  "menu": {
+    "botonCerrar": "Close",
+    "botonBorrar": "Empty",
+    "cantidad": "Quantity",
+    "botonPedido": "Finish order"
+  },
+  "cabecera": {
+    "historia": "History",
+    "nosotros": "About",
+    "contacto": "Contact",
+    "pedido": "Order sheet"
   }
+}

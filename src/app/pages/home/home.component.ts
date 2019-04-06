@@ -131,16 +131,14 @@ export class HomeComponent implements OnInit {
       id: 19
     }
   ];
-  public subscription: Subscription;
   constructor(public dialog: MatDialog, 
     private _ms: MenuService,
     private _ts: Translate_1Service,
     public translate: TranslateService) {
     this.translate.addLangs(['en', 'es']);
     this.translate.setDefaultLang(this._ts.get_translate_init);
-    this.subscription = this._ts.get_translate.subscribe(resp => {
-      translate.use(resp);
-    });}
+
+  }
 
   ngOnInit() {
   }
@@ -158,6 +156,8 @@ export class HomeComponent implements OnInit {
       }
     );
 
+  }
+  ngOnDestroy() {
   }
 
 
