@@ -4,6 +4,7 @@ import { MaterialModule } from '../../modules/material/material.module';
 import { ShareModule } from '../../modules/share/share.module';
 import { OrderRoutingModule } from './order-routing.module';
 import { OrderComponent } from './order.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [OrderComponent],
@@ -11,7 +12,8 @@ import { OrderComponent } from './order.component';
     CommonModule,
     MaterialModule,
     OrderRoutingModule,
-    ShareModule
+    ShareModule,
+    FormsModule
   ]
 })
 export class OrderModule { }

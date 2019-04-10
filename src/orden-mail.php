@@ -210,6 +210,12 @@ $message = '
 																Teléfono: '. $_POST['telefono'] .' <br>
 																Mensaje: '. $_POST['mensaje'] .' <br>
 															</td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+															<td class="text-center pb25" style="color:#666666; font-family:\'Roboto\'; font-size:16px; line-height:30px; text-align:center; padding-bottom:25px;">
+																'. $_POST['orden'] .'
+															</td>
 														</tr>
 														<!-- Button -->
 														<tr>
