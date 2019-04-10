@@ -2,7 +2,7 @@
 .header{
     width: 110%;
     padding: 1%;
-    background: #64B5F6;
+    background: #75cac3;
 }
 
 .img-logo{
@@ -114,7 +114,7 @@
 }
 li, a {
     margin: 75px 0 -55px 0;
-    color: #03A9F4;
+    color: #75cac3;
     font: 14pt "Roboto", sans-serif;
     font-weight: 700;
     line-height: 1.8;
@@ -141,7 +141,7 @@ a:focus {
     position: absolute;
     top: 25px;
     left: 25px;
-    background: #03A9F4;
+    background: #75cac3;
     width: 30px;
     height: 5px;
     transition: .2s ease;

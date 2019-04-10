@@ -5,34 +5,34 @@
     <div class="col-md-4"></div>
     <div class="col-md-4">
       <div class="tarjeta-contacto">
-        <form>
+        <div>
           <mat-form-field class="col-md-12" appearance="outline">
             <mat-label>{{ 'contacto.formulario.nombre' | translate }}</mat-label>
-            <input matInput placeholder="Nombre" autocomplete="off">
+            <input [(ngModel)]="nombre" matInput placeholder="Nombre" autocomplete="off">
             <mat-icon matSuffix>account_circle</mat-icon>
           </mat-form-field>
 
           <mat-form-field class="col-md-12" appearance="outline">
             <mat-label>{{ 'contacto.formulario.correo' | translate }}</mat-label>
-            <input matInput placeholder="Correo electrónico" autocomplete="off">
+            <input [(ngModel)]="correo" matInput placeholder="Correo electrónico" autocomplete="off">
             <mat-icon matSuffix>mail</mat-icon>
           </mat-form-field>
 
           <mat-form-field class="col-md-12" appearance="outline">
             <mat-label>{{ 'contacto.formulario.telefono' | translate }}</mat-label>
-            <input matInput placeholder="Teléfono" autocomplete="off">
+            <input [(ngModel)]="telefono" matInput placeholder="Teléfono" autocomplete="off">
             <mat-icon matSuffix>phone</mat-icon>
           </mat-form-field>
 
           <mat-form-field class="col-md-12" appearance="outline">
             <mat-label>{{ 'contacto.formulario.mensaje' | translate }}</mat-label>
-            <input matInput placeholder="Mensaje" autocomplete="off">
+            <input [(ngModel)]="mensaje" matInput placeholder="Mensaje" autocomplete="off">
             <mat-icon matSuffix>user</mat-icon>
           </mat-form-field>
 
-          <button mat-flat-button class="col-md-12" color="primary">{{ 'contacto.formulario.boton' | translate }}</button>
+          <button mat-flat-button (click)="submit()" class="col-md-12" color="primary">{{ 'contacto.formulario.boton' | translate }}</button>
 
-        </form>
+        </div>
       </div>
     </div>
   </div>
