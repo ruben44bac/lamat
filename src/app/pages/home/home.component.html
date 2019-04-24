@@ -6,7 +6,7 @@
   <div class="row">
     <div *ngFor="let pro of productos" class="col-md-3">
       <div class="tarjeta" (click)="agregar(pro)">
-        <img class="tarjeta-img" src="https://cdn.shopify.com/s/files/1/0346/5933/products/tamal-de-dulce_large.jpg">
+        <img class="tarjeta-img" src="{{ pro.descripcion }}">
 
         <div class="tarjeta-contenido">
           {{ pro.nombre }}
