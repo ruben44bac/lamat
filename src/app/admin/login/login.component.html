@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="titulo">Accede como administrador</div>
+    <div class="clearfix"></div>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <div class="tarjeta-contacto">
+          <div>
+            <mat-form-field class="col-md-12" appearance="outline">
+              <mat-label>Correo electrónico</mat-label>
+              <input [(ngModel)]="correo" matInput placeholder="Correo electrónico" autocomplete="off">
+              <mat-icon matSuffix>mail</mat-icon>
+            </mat-form-field>
+  
+            <mat-form-field class="col-md-12" appearance="outline">
+              <mat-label>Contraseña</mat-label>
+              <input [(ngModel)]="pass" matInput placeholder="Contraseña" autocomplete="off">
+              <mat-icon matSuffix>lock</mat-icon>
+            </mat-form-field>
+  
+
+  
+            <button mat-flat-button (click)="submit()" class="col-md-12" color="primary">Acceder</button>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
