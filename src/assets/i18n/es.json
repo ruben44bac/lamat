@@ -1,6 +1,7 @@
 {
   "orden": {
     "titulo": "Finaliza tu pedido",
+    "texto-contacto": "Ingresa los datos para generar tu pedido y te contactaremos o llámanos al ",
     "titulo-2": "Resumen",
     "total": "Total",
     "formulario": {

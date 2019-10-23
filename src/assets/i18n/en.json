@@ -1,6 +1,7 @@
 {
   "orden": {
     "titulo": "Finish order",
+    "texto-contacto": "Enter the data to generate your order and we will contact you or call us at ",
     "titulo-2": "Resume",
     "total": "Total",
     "formulario": {

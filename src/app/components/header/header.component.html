@@ -4,9 +4,10 @@
   </div>
   <div class="col-md-2"><br></div>
   <div class="col-md-8 ">
-    <label class="col-md-2"></label>
-    <label class="col-md-2 menu-seleccion" routerLink="/history">{{ 'cabecera.historia' | translate }}</label>
-    <label class="col-md-2 menu-seleccion" routerLink="/about">{{ 'cabecera.nosotros' | translate }}</label>
+    <label class="col-md-6"></label>
+
+    <!-- <label class="col-md-2 menu-seleccion" routerLink="/history">{{ 'cabecera.historia' | translate }}</label>
+    <label class="col-md-2 menu-seleccion" routerLink="/about">{{ 'cabecera.nosotros' | translate }}</label> -->
     <label class="col-md-2 menu-seleccion" routerLink="/contact">{{ 'cabecera.contacto' | translate }}</label>
     <label class="col-md-3 menu-seleccion">
       <button (click)="menuCambio()" class="boton-menu" mat-raised-button routerLink="/home">
@@ -27,8 +28,8 @@
   <label id="burger" for="menu-toggle"></label>
   <ul id="menu">
     <li><a href="/home">{{ 'cabecera.pedido' | translate }}</a></li>
-    <li><a href="/history">{{ 'cabecera.historia' | translate }}</a></li>
-    <li><a href="/about">{{ 'cabecera.nosotros' | translate }}</a></li>
+    <!-- <li><a href="/history">{{ 'cabecera.historia' | translate }}</a></li>
+    <li><a href="/about">{{ 'cabecera.nosotros' | translate }}</a></li> -->
     <li><a href="/contact">{{ 'cabecera.contacto' | translate }}</a></li>
   </ul>
 </div>

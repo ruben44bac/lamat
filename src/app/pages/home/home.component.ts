@@ -92,6 +92,24 @@ export class HomeComponent implements OnInit {
       nombre: "Tamales de piña",
       precio:  2.25,
       id: 9
+    },
+    {
+      descripcion: "/assets/products/tamal-1.jpg",
+      nombre: "Tamales de tinga",
+      precio:  2.25,
+      id: 14
+    },
+    {
+      descripcion: "/assets/products/tamal-2.jpg",
+      nombre: "Tamales de cochinita pibil",
+      precio:  2.25,
+      id: 15
+    },
+    {
+      descripcion: "/assets/products/tamal-3.jpg",
+      nombre: "Tamales de frutas cristalizadas",
+      precio:  2.25,
+      id: 16
     }
   ];
   constructor(public dialog: MatDialog, 

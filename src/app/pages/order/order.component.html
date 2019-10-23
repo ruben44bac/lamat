@@ -6,6 +6,8 @@
       <div class="col-md-1"></div>
       <div class="col-md-10 tarjeta">
         <div class="tarjeta-contenido-orden">
+          <label style="color: #718096; text-align: center; margin-left: -.5rem">{{ 'orden.texto-contacto' | translate }}  <b style="color: #2D3748">(281) 408-0973</b></label>
+
           <mat-form-field class="col-md-12" appearance="outline">
             <mat-label>{{ 'orden.formulario.nombre' | translate }}</mat-label>
             <input [(ngModel)]="nombre" matInput placeholder="Nombre" autocomplete="off">
@@ -30,7 +32,8 @@
             <mat-icon matSuffix>user</mat-icon>
           </mat-form-field>
 
-          <button mat-flat-button (click)="submit()" class="col-md-12" color="primary">{{ 'orden.formulario.boton' | translate }}</button>
+          <button mat-flat-button (click)="submit()" class="col-md-12" color="primary">{{ 'orden.formulario.boton' |
+            translate }}</button>
 
         </div>
       </div>
